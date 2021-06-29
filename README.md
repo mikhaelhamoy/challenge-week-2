@@ -1,2 +1,14 @@
 # challenge-week-2
-Create a deployed portfolio of my work samples.
+
+## Purpose
+A deployed portfolio of Mikhael Hamoy's work samples.
+
+## Built With
+* HTML
+* CSS
+
+## Website
+https://mikhaelhamoy.github.io/challenge-week-2/
+
+## Conbtribution
+Made by Mikhael Hamoy
