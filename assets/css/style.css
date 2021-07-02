@@ -1,0 +1,353 @@
+:root {
+    --primary-color: #01B0D3;
+    --secondary-color: #FFFFFF;
+    --tertiary-color: #242333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--tertiary-color);
+    background: var(--primary-color);
+}
+
+section {
+    padding: 60px;
+}
+
+/* <header> style starts */
+
+header {
+    padding: 20px 35px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--secondary-color);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(192, 192, 192, .75);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(192, 192, 192, .75);
+}
+
+header nav ul li a:hover {
+    background: var(--secondary-color);
+    color: var(--tertiary-color);
+    border-radius: 15px;
+    text-shadow: none;
+}
+
+section {
+    padding: 60px;
+}
+/* <header> style ends */
+
+/* hero/jumbotron style starts */
+.hero {
+    background: #333;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hero-avatar {
+    padding: 20px;
+    width: 30%;
+}
+
+.hero-avatar img {
+    width: 100%;
+}
+
+.hero-intro {
+    width: 60%;
+    text-align: left;
+    margin: 3.5%;
+    line-height: 1.2;
+}
+
+.hero-intro h2 {
+    font-size: 55px;
+    color: #131313;
+    text-shadow: 
+      1px -1px 0 #767676, 
+      -1px 2px 1px #737272, 
+      -2px 4px 1px #767474, 
+      -3px 6px 1px #787777, 
+      -4px 8px 1px #7b7a7a, 
+      -5px 10px 1px #7f7d7d, 
+      -6px 12px 1px #828181;
+}
+
+.hero-intro p {
+    color: var(--secondary-color);
+    font-size: 25px;
+    padding-top: 18px;
+}
+/* hero/jumbotron style ends */
+
+section {
+    display: flex;
+}
+
+/* section title style starts */
+.section-title {
+    font-weight: bold;
+    font-size: 23px;
+    color: var(--secondary-color);
+    text-shadow: 0 0 10px rgba(192, 192, 192, .75);
+    flex-wrap: wrap;
+    padding-right: 20px;
+    border-right: 3px solid var(--secondary-color);
+    flex: 1 20%;
+    justify-content: flex-end;
+}
+
+.section-content {
+    flex-wrap: wrap;
+    flex: 2 70%;
+    align-items: center;
+    padding-left: 20px;
+}
+/* section title style ends */
+
+/* about me style starts */
+.bio {
+    line-height: 1.7;
+    color: var(--secondary-color);
+    font-size: 18px;
+}
+
+.bio a:link {
+    text-decoration: none;
+}
+/* about me style ends */
+
+/* works style starts */
+.projects {
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.project {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 48%;
+}
+
+.first-project {
+    width: 100%;
+}
+
+.project div {
+    color: var(--secondary-color);
+}
+
+.project img {
+    display: flex;
+    width: 100%;
+    opacity: 0.80;
+    max-height: 155px;
+}
+
+.first-project img {
+    max-height: none;
+}
+
+.project img:hover {
+    opacity: 1.0;
+}
+/* works style ends */
+
+/* contact me style starts */
+.contacts {
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact {
+    padding: 10px 16px;
+    display: flex;
+}
+
+.contact a {
+    font-weight: lighter;
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+.contact a:link {
+    text-decoration: none;   
+}
+
+.contact:hover {
+    text-decoration: underline;
+}
+/* contact me style ends */
+
+.flex-row {
+    display: flex;
+}
+
+/* footer style starts */
+footer {
+    background: var(--tertiary-color);
+    width: 100%;
+    padding: 40px 35px;
+}
+
+footer h2 {
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 0;
+}
+/* footer style ends */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 970px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    .hero-avatar {
+        width: 100%;
+    }
+
+    .hero-intro {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-intro p {
+        font-size: 35px;
+    }
+
+    section {
+        display: inline-block;
+        padding: 40px 30px;
+    }
+
+    .section-title {
+
+        font-size: 48px;
+        color: var(--secondary-color);
+        border-right: none;
+        border-bottom: 3px solid var(--secondary-color);
+        padding-bottom: 20px;
+        text-align: center;
+        margin: 0 auto 35px auto;
+        width: 80%;
+        justify-content:center;
+    }
+    
+    .section-content {
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 30px;
+    }
+
+    .projects {
+        align-items:flex-start
+    }
+    
+    .contact {
+        padding: 10px 47px;
+        width: 50%;
+    }
+
+    .contact a {
+        font-size: 20px;
+    }
+
+    footer h2 {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+
+    .project img {
+        max-height: 100px;
+    }
+
+    .first-project img {
+        max-height: none;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .section-title {
+        width: 95%;
+    }
+    
+    .bio {
+        width: 100%;
+    }
+    
+    .contact {
+        width: 100%;
+    }
+}
+
