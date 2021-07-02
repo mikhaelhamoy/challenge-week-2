@@ -18,7 +18,7 @@
             <!-- unordered list element -->
             <ul>
                 <li>
-                    <!-- anchol element -->
+                    <!-- anchor element -->
                     <a href="#about-me">About Me</a>
                 </li>
                 <li>
@@ -33,7 +33,7 @@
     
     <!-- hero/jumbotron -->
     <section class="hero">
-        <div>
+        <div class="hero-avatar">
             <img src="./assets/images/avatar.jpg" alt="My Profile Picture" />
         </div>
         <div class="hero-intro">
@@ -48,13 +48,13 @@
     </section>
 
     <!-- "about me" section -->
-    <section id="about-me" class="bio">
-        <div>
-            <h2 class="section-title">
+    <section id="about-me">
+        <div class="flex-row section-title">
+            <h2>
                 About Me
             </h2>
         </div>
-        <div>
+        <div class="flex-row bio section-content">
             <p>
                 Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -68,66 +68,56 @@
 
     <!-- "work" section -->
     <section id="work">
-        <div>
-            <h2 class="section-title">
+        <div class="flex-row section-title">
+            <h2 >
                 Work
             </h2>
         </div>
-        <div>
-            <ul>
-                <li>
-                    <div>
-                        <h3>Run Buddy</h3>
-                        <p>HTML/CSS</p>
-                    </div>
-                    <div>
-                        <a href="https://mikhaelhamoy.github.io/run-buddy/"><img src="./assets/images/run-buddy.jpg" alt="" /></a>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h3>My New Repo</h3>
-                        <p>HTML/CSS</p>
-                    </div>
-                    <div>
-                        <a href="https://mikhaelhamoy.github.io/my-new-repo/"><img src="./assets/images/my-new-repo.jpg" alt="" /></a>
-                    </div>
-                </li>
-                <li>
-                    <div></div>
-                        <h3>Challenge Week 1</h3>
-                        <p>HTML/CSS</p>
-                    </div>
-                    <div>
-                        <a href="https://mikhaelhamoy.github.io/challenge-week-1/"><img src="./assets/images/challenge-week-1.jpg" alt="" /></a>
-                    </div>
-                </li>
-            </ul>
+        <div class="flex-row projects section-content">
+            <article class="project first-project">
+                <div>
+                    <h3>Run Buddy</h3>
+                    <h4>HTML/CSS</h4>
+                </div>
+                <a href="https://mikhaelhamoy.github.io/run-buddy/"><img src="./assets/images/run-buddy.jpg" alt="" /></a>
+            </article>
+            <article class="project">
+                <div>
+                    <h3>My New Repo</h3>
+                    <h4>HTML/CSS</h4>
+                </div>
+                <a href="https://mikhaelhamoy.github.io/my-new-repo/"><img src="./assets/images/my-new-repo.jpg" alt="" /></a>
+            </article>
+            <article class="project">
+                <div>
+                    <h3>Challenge Week 1</h3>
+                    <h4>HTML/CSS</h4>
+                </div>
+                <a href="https://mikhaelhamoy.github.io/challenge-week-1/"><img src="./assets/images/challenge-week-1.jpg" alt="" /></a>
+            </article>
         </div>
     </section>
 
     <!-- "contact me" section -->
     <section id="contact-me">
-        <div>
-            <h2 class="section-title">
+        <div class="flex-row section-title">
+            <h2 c>
             Contact Me
             </h2>
         </div>
-        <div>
-            <ul>
-                <li>
-                    <a href="tel:+1234567890">123-456-7890</a>
-                </li>
-                <li>
-                    <a href="mailto:hello@mikhaelhamoy.com">hello@mikhaelhamoy.com</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/mikhaelhamoy917/">LinkedIn</a>
-                </li>
-                <li>
-                    <a href="https://github.com/mikhaelhamoy">GitHub</a>
-                </li>
-            </ul>
+        <div class="flex-row section-content contacts">
+            <div class="contact">
+                <a href="tel:+1234567890">123-456-7890</a>
+            </div>
+            <div class="contact">
+                <a href="mailto:hello@mikhaelhamoy.com">hello@mikhaelhamoy.com</a>
+            </div>
+            <div class="contact">
+                <a href="https://www.linkedin.com/in/mikhaelhamoy917/">LinkedIn</a>
+            </div>
+            <div class="contact">
+                <a href="https://github.com/mikhaelhamoy">GitHub</a>
+            </div>
         </div>
     </section>
 
