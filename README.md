@@ -8,7 +8,7 @@ A deployed portfolio of Mikhael Hamoy's work samples.
 * CSS
 
 ## Website
-https://mikhaelhamoy.github.io/challenge-week-2/
+https://mikhaelhamoy.github.io/portfolio/
 
 ## Conbtribution
 Made by Mikhael Hamoy

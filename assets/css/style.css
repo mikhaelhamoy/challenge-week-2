@@ -136,7 +136,7 @@ section {
     flex-wrap: wrap;
     padding-right: 20px;
     border-right: 3px solid var(--secondary-color);
-    flex: 1 20%;
+    flex: 1 25%;
     justify-content: flex-end;
 }
 
@@ -172,6 +172,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     width: 48%;
+    padding: 0 .25rem;
 }
 
 .first-project {
@@ -202,11 +203,13 @@ section {
 .contacts {
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
 }
 
 .contact {
     padding: 10px 16px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .contact a {
@@ -280,7 +283,7 @@ footer h2 {
 
     section {
         display: inline-block;
-        padding: 40px 30px;
+        padding: 40px 35px;
     }
 
     .section-title {
@@ -290,6 +293,7 @@ footer h2 {
         border-right: none;
         border-bottom: 3px solid var(--secondary-color);
         padding-bottom: 20px;
+        padding-right: 0;
         text-align: center;
         margin: 0 auto 35px auto;
         width: 80%;
@@ -300,6 +304,7 @@ footer h2 {
         flex-wrap: wrap;
         align-items: center;
         font-size: 30px;
+        padding-left: 0;
     }
 
     .projects {
@@ -328,13 +333,18 @@ footer h2 {
     }
 
     .project img {
-        max-height: 100px;
+        max-height: 150px;
     }
 
     .first-project img {
         max-height: none;
     }
+    
+    .project {
+        width: 100%;
+    }
 }
+
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
@@ -347,6 +357,7 @@ footer h2 {
     }
     
     .contact {
+        padding: 10px 0;
         width: 100%;
     }
 }
